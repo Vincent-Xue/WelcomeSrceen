@@ -1,0 +1,400 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>main screen</title>
+<link href="fontsize.css" rel="stylesheet" type="text/css" />
+<style type="text/css">
+
+.body{
+	background-image:url(img/bg.jpg);
+	background-position:center top;
+	 margin: 0; 
+	 overflow-style:auto; 
+	 overflow:hidden;} 
+
+.left
+{
+	float:left;
+	width:480px;
+	height:660px;
+	position:absolute;
+	left:50px;
+	top: 50%;
+	margin:-330px 0 0 0;
+    border:2px solid #bbb;
+    border-radius:10px;
+    -webkit-border-radius:10px;
+    -moz-border-radius:10px;
+	box-shadow: 1px 1px 10px 5px rgba(255, 255, 255, 0.7);
+	animation:action2 4s infinite;
+	
+
+}
+.leftbg
+{   
+    width:480px;
+	height:660px;
+	 -webkit-border-radius:9px;
+	background:#000;
+	opacity:0.6;
+}
+.right
+{
+	width:720px;
+	height:100px;
+	position:absolute;
+	right:50px;
+	top:54px;
+	border:2px solid #bbb;
+    border-radius:10px;
+    -webkit-border-radius:10px;
+    -moz-border-radius:10px;
+	box-shadow: 1px 1px 10px 5px rgba(255, 255, 255, 0.7);
+	text-align:center;
+	animation:action2 4s infinite;
+	
+}
+.rightbg
+{   
+    width:720px;
+	height:100px;
+	 -webkit-border-radius:9px;
+	background:#000;
+	opacity:0.6;
+}
+.message
+{
+	width:720px;
+	height:506px;
+	position:absolute;
+	right:50px;
+	top:208px;
+	border:2px solid #bbb;
+    border-radius:10px;
+    -webkit-border-radius:10px;
+    -moz-border-radius:10px;
+	box-shadow: 1px 1px 10px 5px rgba(255, 255, 255, 0.7);		
+	animation:action2 4s infinite;
+}
+.messagebg
+{   
+    width:720px;
+	height:506px;
+	 -webkit-border-radius:9px;
+	background:#000;
+	opacity:0.6;
+}
+.messageblock
+{   display:table;
+	width: 720px;
+	height: 506px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin:-253px 0 0 -360px;
+	text-align: center;
+	font-family: "Times New Roman", Times, serif;
+	color: #FFF;
+	}
+
+.weather
+{
+	position:absolute;
+	top:50%;
+	left:50%;
+	margin:-48px 0 0 -288px;
+
+}
+
+
+.box{padding-top: 50px; width:410px; margin: 0 auto;} 
+
+.clock{position:absolute; top:50%; margin:-260px 0 0 0; width:400px; height: 400px; border: 5px solid #CCC; border-radius: 200px; 
+
+background:-webkit-radial-gradient(bottom  left,circle,#fff,#676767); box-shadow: 1px 1px 10px 5px rgba(255, 255, 255, 0.5); 
+animation:action 2s infinite;
+} 
+
+.clock .logo{position: absolute; z-index: 3; top: 50%; left: 50%; margin:50px 0 0 -99px;}
+
+.clock .clock-xin{position: absolute; top: 50%; left: 50%; width:30px; height: 30px; border-radius: 15px; background: #eee;margin:-15px 0 0 -15px;} 
+
+.clock .clock-xin2{position: absolute; top: 50%; left: 50%; width:12px; height: 12px; border-radius: 6px; background: #f00; z-index: 100; margin:-6px 0 0 -6px;} 
+
+.date{position: absolute; top:530px; left:40px;font-size: 40px; color: #fff; text-shadow: 1px 1px 5px black;font-family:	Georgia, "Times New Roman", Times, serif}
+
+
+ 
+.clock .hour{position: absolute; z-index: 3; top: 50%; left: 50%; width:160px; height: 6px; border-radius:5px; background: #000; -webkit-transform-origin: 10px 50%; margin:-3px 0 0 -10px;} 
+
+
+.clock .min{position: absolute; z-index: 4;top: 50%; left: 50%; width:180px; height: 4px; border-radius:5px; background: #333; -webkit-transform-origin: 10px 50%; margin:-2px 0 0 -10px;} 
+
+
+.clock .sec{position: absolute; z-index: 5; top: 50%; left: 50%; width:210px; height: 2px; background: #f00; -webkit-transform-origin: 30px 50%; margin:-1px 0 0 -30px;} 
+
+
+.clock em{display: block; width: 2px; height: 5px; background: #000; position: absolute; top: 0; left: 0; -webkit-transform-origin: 50% 0; margin-left: -1px;} 
+.clock em.ishour{width: 6px; height: 10px; margin-left: -3px;}
+ 
+.clock em.ishour i{font-family:'BebasNeueRegular', Arial, Helvetica, sans-serif;font-size: 25px; color: #000; position: absolute; top: 12px; left: -7px;text-shadow: 1px 1px 5px white; }
+
+
+
+
+@keyframes action
+{
+0%   {background:-webkit-radial-gradient(bottom  left,circle,#fff,#676767); box-shadow: 1px 1px 10px 5px rgba(255, 255, 255, 0.5);}
+10%   {background:-webkit-radial-gradient(bottom  left,circle,#fff,#676767); box-shadow: 1px 1px 20px 5px rgba(255, 255, 255, 0.5);}
+20%   {background:-webkit-radial-gradient(bottom  left,circle,#fff,#676767); box-shadow: 1px 1px 30px 5px rgba(255, 255, 255, 0.5);}
+30%   {background:-webkit-radial-gradient(bottom  left,circle,#fff,#676767); box-shadow: 1px 1px 40px 5px rgba(255, 255, 255, 0.5);}
+40%   {background:-webkit-radial-gradient(bottom  left,circle,#fff,#676767); box-shadow: 1px 1px 50px 5px rgba(255, 255, 255, 0.5);}
+50%   {background:-webkit-radial-gradient(bottom  left,circle,#fff,#676767); box-shadow: 1px 1px 60px 5px rgba(255, 255, 255, 0.5);}
+60%   {background:-webkit-radial-gradient(bottom  left,circle,#fff,#676767); box-shadow: 1px 1px 50px 5px rgba(255, 255, 255, 0.5);}
+70%   {background:-webkit-radial-gradient(bottom  left,circle,#fff,#676767); box-shadow: 1px 1px 40px 5px rgba(255, 255, 255, 0.5);}
+80%   {background:-webkit-radial-gradient(bottom  left,circle,#fff,#676767); box-shadow: 1px 1px 30px 5px rgba(255, 255, 255, 0.5);}
+90%   {background:-webkit-radial-gradient(bottom  left,circle,#fff,#676767); box-shadow: 1px 1px 20px 5px rgba(255, 255, 255, 0.5);}
+100%   {background:-webkit-radial-gradient(bottom  left,circle,#fff,#676767); box-shadow: 1px 1px 10px 5px rgba(255, 255, 255, 0.5);}
+}
+
+@-moz-keyframes action /* Firefox */
+{
+0%   {background:-webkit-radial-gradient(bottom  left,circle,#fff,#676767); box-shadow: 1px 1px 10px 5px rgba(255, 255, 255, 0.5);}
+10%   {background:-webkit-radial-gradient(bottom  left,circle,#fff,#676767); box-shadow: 1px 1px 20px 5px rgba(255, 255, 255, 0.5);}
+20%   {background:-webkit-radial-gradient(bottom  left,circle,#fff,#676767); box-shadow: 1px 1px 30px 5px rgba(255, 255, 255, 0.5);}
+30%   {background:-webkit-radial-gradient(bottom  left,circle,#fff,#676767); box-shadow: 1px 1px 40px 5px rgba(255, 255, 255, 0.5);}
+40%   {background:-webkit-radial-gradient(bottom  left,circle,#fff,#676767); box-shadow: 1px 1px 50px 5px rgba(255, 255, 255, 0.5);}
+50%   {background:-webkit-radial-gradient(bottom  left,circle,#fff,#676767); box-shadow: 1px 1px 60px 5px rgba(255, 255, 255, 0.5);}
+60%   {background:-webkit-radial-gradient(bottom  left,circle,#fff,#676767); box-shadow: 1px 1px 50px 5px rgba(255, 255, 255, 0.5);}
+70%   {background:-webkit-radial-gradient(bottom  left,circle,#fff,#676767); box-shadow: 1px 1px 40px 5px rgba(255, 255, 255, 0.5);}
+80%   {background:-webkit-radial-gradient(bottom  left,circle,#fff,#676767); box-shadow: 1px 1px 30px 5px rgba(255, 255, 255, 0.5);}
+90%   {background:-webkit-radial-gradient(bottom  left,circle,#fff,#676767); box-shadow: 1px 1px 20px 5px rgba(255, 255, 255, 0.5);}
+100%   {background:-webkit-radial-gradient(bottom  left,circle,#fff,#676767); box-shadow: 1px 1px 10px 5px rgba(255, 255, 255, 0.5);}
+}
+
+@-webkit-keyframes action /* Safari 和 Chrome */
+{
+0%   {background:-webkit-radial-gradient(bottom  left,circle,#fff,#676767); box-shadow: 1px 1px 10px 5px rgba(255, 255, 255, 0.5);}
+10%   {background:-webkit-radial-gradient(bottom  left,circle,#fff,#676767); box-shadow: 1px 1px 20px 5px rgba(255, 255, 255, 0.5);}
+20%   {background:-webkit-radial-gradient(bottom  left,circle,#fff,#676767); box-shadow: 1px 1px 30px 5px rgba(255, 255, 255, 0.5);}
+30%   {background:-webkit-radial-gradient(bottom  left,circle,#fff,#676767); box-shadow: 1px 1px 40px 5px rgba(255, 255, 255, 0.5);}
+40%   {background:-webkit-radial-gradient(bottom  left,circle,#fff,#676767); box-shadow: 1px 1px 50px 5px rgba(255, 255, 255, 0.5);}
+50%   {background:-webkit-radial-gradient(bottom  left,circle,#fff,#676767); box-shadow: 1px 1px 60px 5px rgba(255, 255, 255, 0.5);}
+60%   {background:-webkit-radial-gradient(bottom  left,circle,#fff,#676767); box-shadow: 1px 1px 50px 5px rgba(255, 255, 255, 0.5);}
+70%   {background:-webkit-radial-gradient(bottom  left,circle,#fff,#676767); box-shadow: 1px 1px 40px 5px rgba(255, 255, 255, 0.5);}
+80%   {background:-webkit-radial-gradient(bottom  left,circle,#fff,#676767); box-shadow: 1px 1px 30px 5px rgba(255, 255, 255, 0.5);}
+90%   {background:-webkit-radial-gradient(bottom  left,circle,#fff,#676767); box-shadow: 1px 1px 20px 5px rgba(255, 255, 255, 0.5);}
+100%   {background:-webkit-radial-gradient(bottom  left,circle,#fff,#676767); box-shadow: 1px 1px 10px 5px rgba(255, 255, 255, 0.5);}
+}
+
+@-o-keyframes action /* Opera */
+{
+0%   {background:-webkit-radial-gradient(bottom  left,circle,#fff,#676767); box-shadow: 1px 1px 10px 5px rgba(255, 255, 255, 0.5);}
+10%   {background:-webkit-radial-gradient(bottom  left,circle,#fff,#676767); box-shadow: 1px 1px 20px 5px rgba(255, 255, 255, 0.5);}
+20%   {background:-webkit-radial-gradient(bottom  left,circle,#fff,#676767); box-shadow: 1px 1px 30px 5px rgba(255, 255, 255, 0.5);}
+30%   {background:-webkit-radial-gradient(bottom  left,circle,#fff,#676767); box-shadow: 1px 1px 40px 5px rgba(255, 255, 255, 0.5);}
+40%   {background:-webkit-radial-gradient(bottom  left,circle,#fff,#676767); box-shadow: 1px 1px 50px 5px rgba(255, 255, 255, 0.5);}
+50%   {background:-webkit-radial-gradient(bottom  left,circle,#fff,#676767); box-shadow: 1px 1px 60px 5px rgba(255, 255, 255, 0.5);}
+60%   {background:-webkit-radial-gradient(bottom  left,circle,#fff,#676767); box-shadow: 1px 1px 50px 5px rgba(255, 255, 255, 0.5);}
+70%   {background:-webkit-radial-gradient(bottom  left,circle,#fff,#676767); box-shadow: 1px 1px 40px 5px rgba(255, 255, 255, 0.5);}
+80%   {background:-webkit-radial-gradient(bottom  left,circle,#fff,#676767); box-shadow: 1px 1px 30px 5px rgba(255, 255, 255, 0.5);}
+90%   {background:-webkit-radial-gradient(bottom  left,circle,#fff,#676767); box-shadow: 1px 1px 20px 5px rgba(255, 255, 255, 0.5);}
+100%   {background:-webkit-radial-gradient(bottom  left,circle,#fff,#676767); box-shadow: 1px 1px 10px 5px rgba(255, 255, 255, 0.5);}
+}
+
+
+@keyframes action2
+{
+0%   {box-shadow: 1px 1px 10px 5px rgba(255, 255, 255, 0.7);}
+10%   {box-shadow: 1px 1px 20px 5px rgba(255, 255, 255, 0.7);}
+20%   {box-shadow: 1px 1px 30px 5px rgba(255, 255, 255, 0.7);}
+30%   {box-shadow: 1px 1px 40px 5px rgba(255, 255, 255, 0.7);}
+40%   {box-shadow: 1px 1px 50px 5px rgba(255, 255, 255, 0.7);}
+50%   {box-shadow: 1px 1px 60px 5px rgba(255, 255, 255, 0.7);}
+60%   {box-shadow: 1px 1px 50px 5px rgba(255, 255, 255, 0.7);}
+70%   {box-shadow: 1px 1px 40px 5px rgba(255, 255, 255, 0.7);}
+80%   {box-shadow: 1px 1px 30px 5px rgba(255, 255, 255, 0.7);}
+90%   {box-shadow: 1px 1px 20px 5px rgba(255, 255, 255, 0.7);}
+100%   {box-shadow: 1px 1px 10px 5px rgba(255, 255, 255, 0.7);}
+}
+
+@-moz-keyframes action2 /* Firefox */
+{
+0%   {box-shadow: 1px 1px 10px 5px rgba(255, 255, 255, 0.7);}
+10%   {box-shadow: 1px 1px 20px 5px rgba(255, 255, 255, 0.7);}
+20%   {box-shadow: 1px 1px 30px 5px rgba(255, 255, 255, 0.7);}
+30%   {box-shadow: 1px 1px 40px 5px rgba(255, 255, 255, 0.7);}
+40%   {box-shadow: 1px 1px 50px 5px rgba(255, 255, 255, 0.7);}
+50%   {box-shadow: 1px 1px 60px 5px rgba(255, 255, 255, 0.7);}
+60%   {box-shadow: 1px 1px 50px 5px rgba(255, 255, 255, 0.7);}
+70%   {box-shadow: 1px 1px 40px 5px rgba(255, 255, 255, 0.7);}
+80%   {box-shadow: 1px 1px 30px 5px rgba(255, 255, 255, 0.7);}
+90%   {box-shadow: 1px 1px 20px 5px rgba(255, 255, 255, 0.7);}
+100%   {box-shadow: 1px 1px 10px 5px rgba(255, 255, 255, 0.7);}
+}
+
+
+@-webkit-keyframes action2 /* Safari 和 Chrome */
+{
+0%   {box-shadow: 1px 1px 10px 5px rgba(255, 255, 255, 0.7);}
+10%   {box-shadow: 1px 1px 20px 5px rgba(255, 255, 255, 0.7);}
+20%   {box-shadow: 1px 1px 30px 5px rgba(255, 255, 255, 0.7);}
+30%   {box-shadow: 1px 1px 40px 5px rgba(255, 255, 255, 0.7);}
+40%   {box-shadow: 1px 1px 50px 5px rgba(255, 255, 255, 0.7);}
+50%   {box-shadow: 1px 1px 60px 5px rgba(255, 255, 255, 0.7);}
+60%   {box-shadow: 1px 1px 50px 5px rgba(255, 255, 255, 0.7);}
+70%   {box-shadow: 1px 1px 40px 5px rgba(255, 255, 255, 0.7);}
+80%   {box-shadow: 1px 1px 30px 5px rgba(255, 255, 255, 0.7);}
+90%   {box-shadow: 1px 1px 20px 5px rgba(255, 255, 255, 0.7);}
+100%   {box-shadow: 1px 1px 10px 5px rgba(255, 255, 255, 0.7);}
+}
+
+
+@-o-keyframes action2 /* Opera */
+{
+0%   {box-shadow: 1px 1px 10px 5px rgba(255, 255, 255, 0.7);}
+10%   {box-shadow: 1px 1px 20px 5px rgba(255, 255, 255, 0.7);}
+20%   {box-shadow: 1px 1px 30px 5px rgba(255, 255, 255, 0.7);}
+30%   {box-shadow: 1px 1px 40px 5px rgba(255, 255, 255, 0.7);}
+40%   {box-shadow: 1px 1px 50px 5px rgba(255, 255, 255, 0.7);}
+50%   {box-shadow: 1px 1px 60px 5px rgba(255, 255, 255, 0.7);}
+60%   {box-shadow: 1px 1px 50px 5px rgba(255, 255, 255, 0.7);}
+70%   {box-shadow: 1px 1px 40px 5px rgba(255, 255, 255, 0.7);}
+80%   {box-shadow: 1px 1px 30px 5px rgba(255, 255, 255, 0.7);}
+90%   {box-shadow: 1px 1px 20px 5px rgba(255, 255, 255, 0.7);}
+100%   {box-shadow: 1px 1px 10px 5px rgba(255, 255, 255, 0.7);}
+}
+
+
+
+</style>
+</head>
+
+<body class=body>
+<div class=left>
+<div class=leftbg></div>
+<div id="date" class="date"></div> 
+<div style="color:white;"></div> 
+<div class="box"> 
+<div class="clock" id="clock">
+<div class="clock-xin"></div> 
+<div class="clock-xin2"></div> 
+<div class="logo"><img src='img/logo3.gif' width="198" height="44"></div> 
+<div id="hour" class="hour"></div> 
+<div id="min" class="min"></div> 
+<div id="sec" class="sec"></div> 
+</div> 
+</div> 
+</div>
+
+
+<div class=right>
+<div class=rightbg></div>
+<div class=weather>
+<iframe allowtransparency="true" frameborder="0" width="576" height="96" scrolling="no" src="http://tianqi.2345.com/plugin/widget/index.htm?s=2&z=1&t=0&v=0&d=5&bd=0&k=&f=ffffff&q=1&e=1&a=1&c=58362&w=576&h=96&align=center"></iframe>
+</div>
+</div>
+
+<div class=message>
+<div class=messagebg></div>
+<div class ="messageblock" id="massageblock">
+<table style="border:0px; width: 720px; height:506px;">
+<tr>
+    <td style="text-align:center; vertical-align:middle;" id="words">
+    
+    </td>
+</tr>
+</table>
+</div>		
+</div>
+
+<script> 
+
+window.onload = function() { 
+var winHeight = document.documentElement.clientHeight; 
+document.getElementsByTagName('body')[0].style.height = winHeight+'px'; 
+var $clock = document.getElementById('clock'), 
+$date = document.getElementById('date'), 
+$hour = document.getElementById('hour'), 
+$min = document.getElementById('min'), 
+$sec = document.getElementById('sec'), 
+oSecs = document.createElement('em');  
+for (var i = 1; i < 61; i++) { 
+var tempSecs = oSecs.cloneNode(), 
+pos = getSecPos(i); 
+if(i%5==0){  
+             tempSecs.className = 'ishour'; 
+             tempSecs.innerHTML = '<i style="-webkit-transform:rotate('+(-i*6)+'deg);">'+(i/5)+'</i>'; 
+}
+
+tempSecs.style.cssText='left:'+pos.x+'px; top:'+pos.y+'px; -webkit-transform:rotate('+i*6+'deg);'; 
+$clock.appendChild(tempSecs); 
+}
+ 
+function getSecPos(dep) { 
+var hudu = (2*Math.PI/360)*6*dep, 
+r = 200;  
+return { 
+x: Math.floor(r + Math.sin(hudu)*r), 
+y: Math.floor(r - Math.cos(hudu)*r), 
+} 
+} 
+;(function() { 
+ 
+
+var _now = new Date(), 
+_h = _now.getHours(), 
+_m = _now.getMinutes(), 
+_s = _now.getSeconds(); 
+var _day = _now.getDay(); 
+_day = (_day==0)?7:_day; 
+if(_day==1){ 
+_day = "一"; 
+}else if(_day==2){ 
+_day = "二"; 
+}else if(_day==3){ 
+_day = "三"; 
+}else if(_day==4){ 
+_day = "四"; 
+}else if(_day==5){ 
+_day = "五"; 
+}else if(_day==6){ 
+_day = "六"; 
+}else if(_day==7){ 
+_day = "日"; 
+} 
+$date.innerHTML = _now.getFullYear()+'年'+(_now.getMonth()+1)+'月'+_now.getDate()+'日'+' 星期'+_day; 
+
+
+
+//绘制时钟 
+var gotime = function(){ 
+var _h_dep = 0; 
+_s++; 
+if(_s>59){ 
+_s=0; 
+_m++; 
+} 
+if(_m>59){ 
+_m=0; 
+_h++; 
+} 
+if(_h>12){ 
+_h = _h-12; 
+} 
+
+_h_dep = Math.floor(_m/12)*6; 
+$hour.style.cssText = '-webkit-transform:rotate('+(_h*30-90+_h_dep)+'deg);'; 
+$min.style.cssText = '-webkit-transform:rotate('+(_m*6-90)+'deg);'; 
+$sec.style.cssText = '-webkit-transform:rotate('+(_s*6-90)+'deg);'; 
+}; 
+gotime(); 
+setInterval(gotime, 1000); 
+})(); 
+}; 
+</script>
+<script type="text/javascript" src="words.js"></script>
+
+</body>
+</html>
